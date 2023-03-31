@@ -1,0 +1,129 @@
+/* Global Section */
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral Colors */
+  --very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+}
+/* BODY SECTION */
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue-mainBG);
+}
+
+
+/** ITEM DETAILS SECTION **/
+.warpper {
+  background-color: var(--very-dark-blue-cardBG);
+  width: 400px;
+  height: 680px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  width: 100%;
+  display: flex;
+}
+
+/** IMAGE SECTION **/
+.item > img {
+    margin: 25px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+/** ITEM TITLE SECTION **/
+.item.title {
+    color: var(--white);
+
+}
+.item > h2 {
+    margin: 0 0 25px 25px;
+}
+
+/** ITEM DESCRIPTION SECTION **/
+.item.description > p {
+    margin: 0 0 25px 25px;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+/** ITEM PRICE SECTION **/
+.item.price {
+    display: flex;
+    justify-content: space-between;
+}
+.item.price > p {
+    margin: 0 25px 0 25px;
+}
+#price {
+    font-weight: 600;
+    color: var(--cyan);
+}
+#date{
+    color: var(--soft-blue);
+}
+
+/** LINE SECTION **/
+.item.creator {
+    padding: 25px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.item .line {
+    margin: 5px 0;
+    height: 1px;
+    background: var(--very-dark-blue-line);
+}
+/** ITEM CREATOR SECTION **/
+.item.creator > p {
+    margin: 0 0 5px 0;
+    color: var(--white);
+}
+.creator-info {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.item.creator .creator-info img {
+    width: 40px;
+    border-radius: 60px;
+    border: white 1px solid;
+}
+.item.creator .creator-info p {
+    padding: 10px;
+    color: var(--soft-blue);
+}
+.item.creator .creator-info p > span {
+    color: var(--white);
+}
+/* FOOTER SECTION */
+footer{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    color: var(--white);
+}
+.attribution {
+    
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
