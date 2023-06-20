@@ -41,7 +41,7 @@
 
 /** IMAGE SECTION **/
 .item > img {
-  margin: 25px;
+  margin: 20px;
   width: 90%;
   border-radius: 20px;
 }
@@ -52,8 +52,12 @@
 }
 .item > h2 {
   margin: 0 0 25px 25px;
+  font-size: 1.5em;
 }
-
+.item.title :hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
 /** ITEM DESCRIPTION SECTION **/
 .item.description > p {
   margin: 0 0 25px 25px;
@@ -109,6 +113,12 @@
 .item.creator .creator-info p > span {
   color: var(--white);
 }
+
+#creator:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
 /* FOOTER SECTION */
 footer {
   width: 100%;
